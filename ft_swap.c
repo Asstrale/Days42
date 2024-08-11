@@ -1,17 +1,18 @@
 #include <stdio.h>
 
-void ft_swap(int *a, int *b)
+void ft_swap(int *a, int *b) 
 {
-    int c = *a;
+    int c = 0;
+    c = *a; 
     *a = *b;
-    *b = c;
+    *b = c; 
 }
 
 int main()
 {
-    int c = 69;
-    int d = 10;
-    printf("%i %i\n",c, d); 
-    ft_swap(&c, &d);
-    printf("%i %i\n",c, d); 
+    int x = 5;
+    int y = 10;
+    printf("%d %d\n", x, y);
+    ft_swap(&x, &y);
+    printf("%d %d\n", x, y);
 }
