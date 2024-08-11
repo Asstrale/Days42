@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void ft_div_mod(int a, int b, int *div, int *mod)
+{
+    *div = a / b;
+    *mod = a % b;
+}
+
+int main()
+{
+    int quotient, reste = 0;
+    
+    ft_div_mod(5145, 4, &quotient, &reste);
+    printf("%i %i\n",quotient, reste); 
+}
